@@ -74,4 +74,4 @@ Cookie digunakan untuk menyimpan data pengguna di browser. Operasi yang didukung
 
 ## Hosting Website Pisang Kembung
 
-**Link:** [Website Pisang Kembung](#)
+**Link:** [http://tokopisbung.wuaze.com](#)
