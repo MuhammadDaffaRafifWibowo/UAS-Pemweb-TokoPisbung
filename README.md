@@ -75,3 +75,70 @@ Cookie digunakan untuk menyimpan data pengguna di browser. Operasi yang didukung
 ## Hosting Website Pisang Kembung
 
 <a href="http://tokopisbung.wuaze.com">PisangKembung</a>
+
+# Panduan Hosting Aplikasi Web dengan InfinityFree
+
+Dokumen ini memberikan langkah-langkah untuk meng-host aplikasi web menggunakan layanan hosting gratis dari InfinityFree.
+
+## Langkah-Langkah Hosting
+
+### 1. Pendaftaran dan Login ke InfinityFree
+1. Buka situs [InfinityFree.net](https://www.infinityfree.net).
+2. Daftar akun baru atau masuk jika sudah memiliki akun.
+
+### 2. Membuat Akun Hosting
+1. Klik tombol **Create Account** di dashboard InfinityFree.
+2. Pilih subdomain gratis yang disediakan atau tambahkan domain milik Anda sendiri.
+
+### 3. Mengunggah File Aplikasi
+1. Gunakan **File Manager** di dashboard atau FTP client seperti [FileZilla](https://filezilla-project.org/) untuk mengakses server.
+   - Masukkan kredensial FTP dari InfinityFree untuk login.
+2. Upload file aplikasi ke direktori `htdocs`.
+
+### 4. Pengaturan Database (Opsional)
+1. Jika aplikasi memerlukan database, buat database baru melalui menu **MySQL Databases** di cPanel.
+2. Perbarui file konfigurasi aplikasi dengan kredensial database:
+   - Host: `sqlXXX.infinityfree.com` (detailnya tersedia di cPanel).
+   - Username dan Password: Dapat ditemukan di panel InfinityFree.
+
+### 5. Mengakses Aplikasi Web
+Setelah proses upload selesai, aplikasi web Anda dapat diakses melalui URL yang terkait dengan akun hosting.
+
+Contoh: `http://your-subdomain.epizy.com`
+
+## Alasan Memilih InfinityFree
+InfinityFree dipilih sebagai layanan hosting karena:
+
+- **Gratis**: Menawarkan fitur dasar tanpa biaya.
+- **Mendukung PHP dan MySQL**: Memenuhi kebutuhan aplikasi dengan backend.
+- **cPanel Gratis**: Mempermudah pengelolaan file dan database.
+- **Subdomain Gratis**: Solusi ideal untuk tahap awal pengembangan.
+
+## Tips Keamanan Aplikasi Web
+Untuk menjaga keamanan aplikasi web:
+
+### 1. Aktifkan HTTPS
+- Gunakan sertifikat SSL gratis yang tersedia di InfinityFree.
+- Pastikan komunikasi antara server dan klien terenkripsi.
+
+### 2. Validasi Input Pengguna
+- Pastikan input dari pengguna divalidasi di sisi server untuk mencegah serangan seperti SQL Injection dan XSS.
+
+### 3. Atur Izin File dan Direktori
+- Konfigurasikan izin file dan direktori agar tidak dapat diakses secara tidak sah.
+
+### 4. Perbarui Secara Berkala
+- Lakukan update aplikasi dan dependensi untuk mengurangi risiko keamanan.
+
+## Konfigurasi Server
+Pengaturan server yang digunakan meliputi:
+
+- **PHP Versi Terbaru**: Memanfaatkan versi PHP terkini yang disediakan oleh InfinityFree.
+- **MySQL Database**: Menyimpan data aplikasi dengan aman menggunakan kredensial yang kuat.
+- **File Upload**: File diunggah menggunakan FTP ke direktori `htdocs`.
+- **SSL Configuration**: Mengaktifkan SSL gratis untuk melindungi komunikasi.
+
+---
+
+**Catatan:** Panduan ini cocok untuk pengembangan atau tahap awal. Untuk kebutuhan produksi atau lalu lintas tinggi, disarankan beralih ke layanan hosting berbayar yang menawarkan fitur lebih lengkap.
+
