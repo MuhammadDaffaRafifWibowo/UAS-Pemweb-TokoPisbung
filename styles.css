@@ -1,0 +1,162 @@
+/* Global Styles */
+html,
+body {
+  height: 100%; /* Menjamin tinggi halaman penuh */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak vertikal dengan Flexbox */
+  background-color: #ffe4e6; /* Latar belakang pink lembut */
+  color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #660000; /* Merah gelap */
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  flex-grow: 1; /* Memungkinkan konten utama untuk mengisi ruang yang tersisa */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #660000; /* Merah gelap */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  flex-shrink: 0; /* Memastikan footer tidak mengecil atau berubah ukuran */
+  margin-top: auto; /* Posisikan footer di bawah konten */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  background-color: #ffe4e6; /* Pink lembut */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #ff6666; /* Merah terang */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #660000; /* Merah gelap */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+table th {
+  background-color: #660000; /* Merah gelap */
+  color: #fff;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #ffe4e6; /* Pink lembut */
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #fff; /* Putih */
+}
+
+/* Table Layout: 2 Kolom Kiri dan 2 Kolom Kanan */
+table th:nth-child(odd),
+table td:nth-child(odd) {
+  background-color: #ffcccc; /* Pink terang */
+}
+
+table th:nth-child(even),
+table td:nth-child(even) {
+  background-color: #660000; /* Merah gelap */
+  color: #fff;
+}
+
+table tbody tr:hover {
+  background-color: #ff9999; /* Pink hover */
+}
